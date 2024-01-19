@@ -17,6 +17,8 @@ The trained BioBridge model checkpoints.
 
 - `data/BindData/`: The preprocessed BioBridge related data and its configurations.
 
+- `data/mouse_protein/`: The preprocessed mouse protein data and its configurations regarding the mouse protein prediction task in the paper.
+
 ## `dataset/`
 The guidelines for data preprocessing.
 
@@ -32,5 +34,20 @@ The example script for training BioBridge.
 ## `eval.sh`
 The example script for using BioBridge for cross-modality prediction.
 
+## `experiments/mouse_protein`
+The example script for training BioBridge on the mouse protein prediction task.
 
+## `experiments/molecule_generation`
+The example script for testing BioBridge on prompting LLMs for molecule generation and Q&A tasks.
+
+# References
+If you find this repository useful in your research, please cite the following paper:
+```
+@inproceedings{wang2023biobridge,
+  title={BioBridge: Bridging Biomedical Foundation Models via Knowledge Graph},
+  author={Wang, Zifeng and Wang, Zichen and Srinivasan, Balasubramaniam and Ioannidis, Vassilis N and Rangwala, Huzefa and Anubhai, Rishita},
+  booktitle={International Conference on Learning Representations},
+  year={2024}
+}
+```
 

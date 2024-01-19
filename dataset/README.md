@@ -1,7 +1,8 @@
 # Run this script to build the data for the following experiments
 
 ## 0. Prepare for data processing
-unzip the primekg data and put it under the data folder
+Please download the raw PrimeKG data from: [PrimeKG](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM).
+Then, unzip the primekg data and put it under the data folder
 ```shell
 unzip data/PrimeKG/dataverse_files.zip -d data/PrimeKG
 ```
