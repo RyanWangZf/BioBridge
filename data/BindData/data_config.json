@@ -1,0 +1,42 @@
+{
+    "node_type": {
+        "biological_process": 0,
+        "gene/protein": 1,
+        "disease": 2,
+        "effect/phenotype": 3,
+        "anatomy": 4,
+        "molecular_function": 5,
+        "drug": 6,
+        "cellular_component": 7,
+        "pathway": 8,
+        "exposure": 9
+    },
+    "relation_type": {
+        "expression present": 0,
+        "synergistic interaction": 1,
+        "interacts with": 2,
+        "ppi": 3,
+        "phenotype present": 4,
+        "parent-child": 5,
+        "associated with": 6,
+        "side effect": 7,
+        "contraindication": 8,
+        "expression absent": 9,
+        "target": 10,
+        "indication": 11,
+        "enzyme": 12,
+        "transporter": 13,
+        "off-label use": 14,
+        "linked to": 15,
+        "phenotype absent": 16,
+        "carrier": 17
+    },
+    "emb_dim": {
+        "biological_process": 768,
+        "cellular_component": 768,
+        "disease": 768,
+        "drug": 512,
+        "molecular_function": 768,
+        "gene/protein": 2560
+    }
+}

@@ -1,0 +1,1 @@
+This folder contains several examples of prompting LLMs with BioBridge to make cross-modality generation.
