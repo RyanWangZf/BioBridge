@@ -10,6 +10,14 @@ input_dir = "./data"
 output_dir = "./data/BindData"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
+
+if os.path.exists(os.path.join(output_dir, "data_config.json")):
+    print("[WARN] `data_config.json` already exists!")
+    print("Replace it with new one will require re-training the BioBridge model from scratch.")
+    print("If you want to replace it, please delete it manually first, then run this script again!")
+    print("Quit...")
+    exit()
+
 primekg_path = os.path.join(input_dir, "./PrimeKG")
 
 # load primeKG nodes

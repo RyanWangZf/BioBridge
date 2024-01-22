@@ -31,7 +31,6 @@ from src.dataset import TrainDataset, ValDataset
 from src.collator import TrainCollator, ValCollator
 from src.trainer import BindingTrainer
 from src.dataset import load_split_data
-from src.test import debug_train_dataloader, debug_test_dataloader
 
 def build_model_config(data_config):
     # build model config

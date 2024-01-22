@@ -10,7 +10,7 @@ import multiprocess
 import fire
 import pandas as pd
 
-def main(split_folder):
+def main(split_folder="./data/BindData/train_test_split"):
     input_dir = "./data/BindData"
     df = pd.read_csv(os.path.join(input_dir, "triplet_full.csv"))
 

@@ -14,9 +14,18 @@ class TrainCollator:
         # randomly sample a negative y_index
         outputs = defaultdict(list)
         for row in batch:
+            if row["x_index"] not in embedding_dict:
+                print("[WARN] node index {} not in embedding dict, skip it.".format(row["x_index"]))
+                continue
+
+            if row["y_index"] not in embedding_dict:
+                print("[WARN] node index {} not in embedding dict, skip it.".format(row["y_index"]))
+                continue
+
             head_emb = torch.tensor(embedding_dict[row["x_index"]])
             tail_emb = torch.tensor(embedding_dict[row["y_index"]])
             neg_tail_emb = None
+
             if "negative_y_index" in row:
                 negative_y_index = row["negative_y_index"]
                 if isinstance(negative_y_index, str):
@@ -24,7 +33,9 @@ class TrainCollator:
 
                 assert self.n_negative <= len(negative_y_index), \
                     f"the number of negative samples {self.n_negative} is larger than the number of negative y_index {len(negative_y_index)}, please use a smaller `n_negative`!"
+
                 # randomly sample a set of negative y_index
+                negative_y_index = [idx for idx in negative_y_index if idx in embedding_dict]
                 sub_neg_y_index = np.random.choice(negative_y_index, self.n_negative, replace=False)
                 neg_tail_emb = torch.stack([torch.tensor(embedding_dict[idx]) for idx in sub_neg_y_index])
 
