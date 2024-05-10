@@ -1,6 +1,6 @@
 # BioBridge
 
-This is the official implementation of the paper [BioBridge: Bridging Biomedical Foundation Models via Knowledge Graph](https://arxiv.org/pdf/2310.03320.pdf) (ICLR 2024).
+This is the official implementation of the paper [BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs](https://arxiv.org/pdf/2310.03320.pdf) (ICLR 2024).
 
 # Main components
 
@@ -44,7 +44,7 @@ The example script for testing BioBridge on prompting LLMs for molecule generati
 If you find this repository useful in your research, please cite the following paper:
 ```
 @inproceedings{wang2023biobridge,
-  title={BioBridge: Bridging Biomedical Foundation Models via Knowledge Graph},
+  title={BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs},
   author={Wang, Zifeng and Wang, Zichen and Srinivasan, Balasubramaniam and Ioannidis, Vassilis N and Rangwala, Huzefa and Anubhai, Rishita},
   booktitle={International Conference on Learning Representations},
   year={2024}
